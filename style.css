@@ -1,0 +1,437 @@
+.page {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #2e323f;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin: auto;
+}
+
+.header {
+  background-color: #2e323f;
+  position: relative;
+}
+
+.header__content {
+  text-align: center;
+}
+
+.logo {
+  padding: 1rem 0;
+}
+
+.nav-toggle {
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  margin: .5rem 0;
+  right: .5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #a59678;
+  border-radius: 50%;
+  transition: opacity 250ms ease;
+}
+
+.nav-toggle:hover {
+  opacity: .75;
+}
+
+.nav-toggle:focus {
+  outline-color: transparent;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: .1em;
+  background-color: #fff;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-.5rem);
+}
+
+.hamburger::after {
+  transform: translateY(.4rem);
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  transition: height 200ms;
+}
+
+.nav_visible {
+  visibility: visible;
+  height: 12rem;
+  position: relative;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.nav__item {
+  margin: 1rem 0;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 200ms;
+}
+
+.nav__link_type_button {
+  background-color: #a59678;
+  padding: .2rem 1rem;
+  border-radius: 10rem;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: .55;
+}
+
+.hero {
+  background-color: #3b4050;
+  padding: 4rem 0;
+}
+
+.hero__content {
+  color: #fff;
+}
+
+.hero__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 0 0 4rem;
+}
+
+.hero__title_accent {
+  color: #a59678;
+}
+
+.hero__text {
+  line-height: 1.5;
+  margin: 0 0 2rem;
+  font-size: 1.5rem;
+}
+
+.hero__button {
+  color: #fff;
+  background-color: #a59678;
+  padding: .3rem 3rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  transition: opacity 200ms;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  opacity: .55;
+}
+
+.three-columns {
+  background-color: #f1f1f1;
+  padding: 3rem 0;
+}
+
+.widget {
+  text-align: center;
+  padding: 2rem;
+}
+
+.widget:last-of-type {
+  margin-bottom: 0;
+}
+
+.widget__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.875rem;
+  margin: 0 0 1em;
+}
+
+.three-columns .widget__title {
+  color: #a59678;
+}
+
+.widget__text {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.main {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.main-content__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color: #a59678;
+  font-size: 2.25rem;
+  margin: 0 0 1em;
+}
+
+.main-content__text {
+  font-size: 1.3125rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.main-content__image {
+  max-width: 100%;
+  margin: 3rem 0;
+}
+
+.aside {
+  margin-top: 5rem;
+}
+
+.aside__widget {
+  background-color: #3b4050;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #3b4050;
+  color: #6f737f;
+  padding: 3rem 0;
+}
+
+.footer__title {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 0 0 1.5em;
+  text-align: center;
+}
+
+.footer__subtitle {
+  color: #a59678;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.3125rem;
+  margin: 0 0 1em;
+}
+
+.footer__description {
+  margin-bottom: 3rem;
+}
+
+.footer__description-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.5rem 0 0;
+}
+
+.footer__column {
+  text-align: center;
+  margin: 0 0 2.5em 0;
+}
+
+.footer__column:last-of-type {
+  margin: 0;
+}
+
+.footer__column-links {
+  padding: 0;
+  list-style: none;
+  line-height: 3;
+}
+
+.footer__column-link {
+  color: #6f737f;
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+.footer__column-link:hover,
+.footer__column-link:focus {
+  color: #fff;
+}
+
+@media (min-width: 700px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .header__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__item {
+    margin: 0 0 0 3rem;
+  }
+
+  .hero__title {
+    font-size: 5.625rem;
+  }
+
+  .aside,
+  .three-columns__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .widget,
+  .aside__widget {
+    width: 32%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .footer__description {
+    width: 50%;
+    margin: 0 auto 5rem;
+  }
+
+  .footer__columns {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer__column {
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+
+  .nav__item {
+    margin: 0 0 0 4rem;
+  }
+
+  .hero {
+    padding: 8rem 0 10rem;
+  }
+
+  .hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .hero__title {
+    margin: 0;
+    width: 48%;
+  }
+
+  .hero__description {
+    width: 50%;
+  }
+
+  .three-columns {
+    padding: 6rem 0;
+  }
+
+  .widget {
+    width: 30%;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+  }
+
+  .main-content {
+    width: 60%;
+    padding: 0;
+  }
+
+  .main-content__title {
+    margin-top: 0;
+  }
+
+  .aside {
+    display: block;
+    width: 30%;
+    margin: 0;
+  }
+
+  .aside__widget {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .footer {
+    padding: 5rem 0;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__description {
+    width: 40%;
+    margin: 0;
+  }
+
+  .footer__columns {
+    width: 50%;
+  }
+
+  .footer__column {
+    width: 30%;
+  }
+
+}
